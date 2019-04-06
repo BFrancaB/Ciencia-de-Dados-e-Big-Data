@@ -675,10 +675,10 @@ print("Fatorial de %d é %d" % (n, resultado))
 
 numero = int(input('Número: '))
 
-digito_1 = (int(numero//10000)%10) + 7
-digito_2 = (int(numero//1000)%10) + 7
-digito_3 = (int(numero//100)%10) + 7
-digito_4 = (int(numero//10)%10) + 7
+digito_1 = (int(numero//10000 + 7)%10) 
+digito_2 = (int(numero//1000 + 7)%10) 
+digito_3 = (int(numero//100 + 7)%10) 
+digito_4 = (int(numero//10 + 7)%10)      
 
 numero_criptografado = str(digito_3) + '' + str(digito_4) + '' + str(digito_1) + '' + str(digito_2)
 
